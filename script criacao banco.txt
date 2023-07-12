@@ -1,0 +1,68 @@
+-- Table: public.autor
+
+-- DROP TABLE IF EXISTS public.autor;
+
+CREATE TABLE IF NOT EXISTS public.autor
+(
+    id_autor integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    nome text COLLATE pg_catalog."default",
+    paisorigem text COLLATE pg_catalog."default",
+    CONSTRAINT autor_pkey PRIMARY KEY (id_autor)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.autor
+    OWNER to postgres;
+
+------------------------------------------
+
+-- Table: public.cliente
+
+-- DROP TABLE IF EXISTS public.cliente;
+
+CREATE TABLE IF NOT EXISTS public.cliente
+(
+    id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    matricula text COLLATE pg_catalog."default",
+    nome text COLLATE pg_catalog."default",
+    telefone text COLLATE pg_catalog."default",
+    CONSTRAINT cliente_pkey PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.cliente
+    OWNER to postgres;
+
+--------------------------------------------
+
+-- Table: public.livro
+
+-- DROP TABLE IF EXISTS public.livro;
+
+CREATE TABLE IF NOT EXISTS public.livro
+(
+    id integer NOT NULL,
+    nome text COLLATE pg_catalog."default",
+    isbn text COLLATE pg_catalog."default",
+    idautor integer NOT NULL,
+    editora text COLLATE pg_catalog."default",
+    anopublicacao integer,
+    CONSTRAINT autor FOREIGN KEY (idautor)
+        REFERENCES public.autor (id_autor) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.livro
+    OWNER to postgres;

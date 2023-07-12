@@ -1,0 +1,155 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "testestrabalho2",
+    "dateExported": "2023-07-11T02:01:36.737Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ac1540d5-26a1-47a5-ac6d-c16ae55e8573",
+            "colId": "2f0e9f08-33b4-4347-8771-da85e4c75aa2",
+            "containerId": "",
+            "name": "alterar cliente",
+            "url": "http://localhost:3000/clientes/1",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2023-07-11T01:47:44.841Z",
+            "modified": "2023-07-11T01:47:44.841Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"matricula\": \"AB124\",\n  \"nome\": \"fulano de Tal\",\n  \"telefone\": \"98467-3221\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d0be3781-ab21-45ff-b016-3eebe16d72b6",
+            "colId": "2f0e9f08-33b4-4347-8771-da85e4c75aa2",
+            "containerId": "",
+            "name": "delete cliente",
+            "url": "http://localhost:3000/clientes/1",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2023-07-11T01:51:26.874Z",
+            "modified": "2023-07-11T01:51:26.874Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "af18bd41-3eed-426c-811c-d88a63705cd3",
+            "colId": "2f0e9f08-33b4-4347-8771-da85e4c75aa2",
+            "containerId": "",
+            "name": "post(criar) cliente",
+            "url": "http://localhost:3000/clientes",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-07-11T01:52:50.192Z",
+            "modified": "2023-07-11T01:52:50.192Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"matricula\": \"AB124\",\n  \"nome\": \"Cicrano de Tal\",\n  \"telefone\": \"98467-3221\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ec3e9244-29f5-4770-aa1f-2873ee593024",
+            "colId": "2f0e9f08-33b4-4347-8771-da85e4c75aa2",
+            "containerId": "",
+            "name": "get(consultar) clientes",
+            "url": "http://localhost:3000/clientes",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-11T01:54:18.253Z",
+            "modified": "2023-07-11T01:54:18.254Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "082f1c2f-d52b-4a67-9087-c6bf4bbda1ec",
+            "colId": "2f0e9f08-33b4-4347-8771-da85e4c75aa2",
+            "containerId": "",
+            "name": "get(consultarporid) cliente",
+            "url": "http://localhost:3000/clientes/3",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-07-11T01:55:04.318Z",
+            "modified": "2023-07-11T01:55:04.318Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4bbcd952-9924-4f82-80ca-9112e1d21f01",
+            "colId": "2f0e9f08-33b4-4347-8771-da85e4c75aa2",
+            "containerId": "",
+            "name": "get(consulta) autor",
+            "url": "http://localhost:3000/autor",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-07-11T01:56:49.660Z",
+            "modified": "2023-07-11T01:56:49.660Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c7fa11fb-c7d4-4eee-a682-887a6c4c76be",
+            "colId": "2f0e9f08-33b4-4347-8771-da85e4c75aa2",
+            "containerId": "",
+            "name": "post (cadastro) autor",
+            "url": "http://localhost:3000/autor",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-07-11T01:57:45.260Z",
+            "modified": "2023-07-11T01:57:45.260Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Ricardo\",\n  \"paisOrigem\": \"Brasil\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fc1fe52f-4d43-4334-9579-f34c1f326c62",
+            "colId": "2f0e9f08-33b4-4347-8771-da85e4c75aa2",
+            "containerId": "",
+            "name": "put(alterar) autor",
+            "url": "http://localhost:3000/autor/2",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-07-11T01:59:20.745Z",
+            "modified": "2023-07-11T01:59:20.745Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"José\",\n  \"paisOrigem\": \"Brasil\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fe2efa2c-5d37-49e4-999e-abbbb617b4a3",
+            "colId": "2f0e9f08-33b4-4347-8771-da85e4c75aa2",
+            "containerId": "",
+            "name": "delete autor",
+            "url": "http://localhost:3000/autor/2",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-07-11T02:00:23.365Z",
+            "modified": "2023-07-11T02:00:23.365Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
